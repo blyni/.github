@@ -38,28 +38,18 @@ El objetivo es uno: **un navegador que gaste poco y que se pueda medir**. Cada d
 Blyni está dividido en un núcleo y varias piezas independientes que se comunican mediante contratos gRPC versionados.
 
 ```mermaid
-flowchart LR
-    subgraph App["App de escritorio"]
-        N["Núcleo<br/>pestañas, niveles, barra, sesión"]
-        M["Capa macOS<br/>AppKit + WebKit"]
-        W["Capa Windows<br/>Win32 + WebView2"]
-        N --- M
-        N --- W
+flowchart TB
+    subgraph APP["App de escritorio"]
+        direction LR
+        M["Capa macOS<br/>AppKit + WebKit"] --- N["Núcleo<br/>pestañas, niveles, barra, sesión"] --- W["Capa Windows<br/>Win32 + WebView2"]
     end
-    B["Bloqueo<br/>adblock-rust"]
-    subgraph Buscador["Buscador propio"]
-        I["Índice y ranking"]
-        P["Página de resultados"]
-        NZ["Normalizador<br/>pliegue y ortografía"]
-        S["Sintetizador<br/>respuestas con citas"]
+    subgraph SRV["Servicios locales, por gRPC"]
+        direction LR
+        B["Bloqueo<br/>adblock-rust"]
+        P["Página de resultados"] --> I["Índice y ranking<br/>con el normalizador"]
+        P --> S["Sintetizador<br/>respuestas con citas"]
     end
-    N -- gRPC --> B
-    N -- lanza --> I
-    N -- lanza --> P
-    N -- lanza --> S
-    P -- gRPC --> I
-    P -- gRPC --> S
-    I --- NZ
+    APP --> SRV
 ```
 
 ## Componentes
