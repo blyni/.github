@@ -191,6 +191,7 @@ Los colores de la marca son también los de los niveles de memoria de las pesta�
 
 - **Código:** GPL-3.0-or-later.
 - **Piezas del buscador derivadas de websurfx y Stract:** conservan la licencia AGPL-3.0 de su origen, igual que los binarios que las enlazan.
+- **Licencia Blyni:** la licencia propia de Blyni sobre lo que es suyo, junto a las anteriores y sin reemplazarlas: [LICENSE-BLYNI.md](https://github.com/blyni/.github/blob/main/LICENSE-BLYNI.md).
 - **Marca:** el nombre Blyni, la mascota, el wordmark, los logotipos y los iconos de la app son de su autor, con todos los derechos reservados. La licencia del código no se extiende a la marca: un fork puede conservar el código según su licencia, pero debe cambiar el nombre y los logotipos.
 - **Tipografías:** Titan One e Inter, bajo la SIL Open Font License 1.1. **Iconos:** Lucide, bajo la licencia ISC.
 
