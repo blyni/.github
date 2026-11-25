@@ -62,7 +62,7 @@ flowchart TB
 
 ## Componentes
 
-Los repositorios del proyecto son privados por ahora.
+Los repositorios del proyecto son privados por ahora, salvo [`blyni-reportes-issue`](https://github.com/blyni/blyni-reportes-issue) (donde se reciben los reportes) y este perfil.
 
 | Repositorio | Qué contiene |
 |---|---|
@@ -81,6 +81,8 @@ Los repositorios del proyecto son privados por ahora.
 | `blyni-stract` | Ranking derivado de Stract. |
 | `blyni-marca` | Kit de marca: mascota, logotipos, iconos de la app, favicons y paleta. |
 | `blyni-medicion` | Repositorio del equipo de Monitoreo. Nuevo: todavía sin código. |
+| `blyni-landig-page` | La landing page de Blyni (así se escribe su nombre en GitHub). Nuevo: todavía sin código. |
+| `blyni-reportes-issue` | Reportes de errores, sugerencias y preguntas: la guía para escribirlos, con capturas y videos, y sus formularios. Público. |
 
 ## Principios de ingeniería
 
@@ -145,6 +147,10 @@ Cada área tiene sus responsables.
   </tr>
 </table>
 
+## Reportar un problema
+
+Si probando Blyni encuentras un error, tienes una idea o una duda, entra a [`blyni-reportes-issue`](https://github.com/blyni/blyni-reportes-issue): eliges el tipo de reporte y el formulario ya trae los campos y un texto de ejemplo. La guía explica cómo escribirlo bien, con capturas y videos, y qué tapar antes de publicarlo.
+
 ## Estado
 
 - Versión `0.1.0`, en desarrollo activo. Todavía no hay versiones públicas para descargar.
@@ -152,6 +158,7 @@ Cada área tiene sus responsables.
 - **Windows:** compila para x64 y ARM64; las pruebas y la autoprueba corren en Windows real dentro de la integración continua.
 - **iPhone y iPad, Android y televisión:** solo estudio y diseño. No hay código, versiones ni pruebas en dispositivo todavía.
 - **Monitoreo:** repositorio nuevo, todavía sin código.
+- **Landing page:** repositorio nuevo, todavía sin código.
 
 ## Marca
 
@@ -198,5 +205,5 @@ Los colores de la marca son también los de los niveles de memoria de las pesta�
 ---
 
 <p align="center">
-  Blyni &middot; navegador ligero en Rust para macOS y Windows
+  Blyni &middot; Navegador ligero en Rust para macOS, Windows, iOS, Android y TV
 </p>
